@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/css/styles.css" rel="stylesheet" />
+    <link rel="icon" href="./src/img/cloudy.png" type="image/x-icon" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="flex-box">
+      <h1 class="weather-header">Weather</h1>
+      <div class="input-container">
+        <input
+          class="search-input"
+          type="text"
+          placeholder="Enter your location"
+        />
+        <button class="search-btn" type="button">Search</button>
+      </div>
+
+      <div class="weather-info is-hidden">
+        <h2 class="weather-info-location"></h2>
+        <h2 class="header-data"></h2>
+        <p class="temperature"></p>
+        <p class="description"></p>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
