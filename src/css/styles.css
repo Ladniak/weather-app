@@ -39,26 +39,29 @@ img {
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
-  background: #2e2e2e;
+  background: rgb(6, 83, 119);
 }
 
-.is-hidden {
+/* ===== PROGRAM STYLES ===== */
+
+.weather-info.is-hidden {
   display: none;
-}
-
-#studio {
-  color: #404bbf;
 }
 
 .flex-box {
   display: flex;
-  flex-direction: column;
   padding-left: 25px;
   gap: 15px;
 }
 
+.global {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
 .weather-header {
-  color: #ffffff;
+  color: rgb(6, 83, 119);
 }
 
 .input-container {
@@ -68,56 +71,147 @@ body {
 
 .search-input {
   width: 100%;
-  height: 29px;
+  height: 37px;
   border-radius: 24px;
   border: none;
   padding-left: 10px;
-  color: #435ce9;
   background-color: #ffffff;
+  font-size: 20px;
+  font-weight: 550;
 }
 
 .search-btn {
-  position: absolute; /* Абсолютне позиціонування для кнопки */
-  right: 9px; /* Відступ від правого краю */
-  top: 50%; /* Вирівнюємо по вертикалі відносно центру */
-  transform: translateY(-50%); /* Центруємо по вертикалі */
-  padding: 3px 5px;
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 4px;
   border-radius: 24px;
-  width: 75px;
   border: none;
-  background: #435ce9;
+  background: rgb(28, 183, 255);
   color: #ffffff;
 }
 
+.mag-glass {
+  width: 24px;
+}
+
 .search-btn:hover {
-  background: #384ecc;
+  background: rgb(24, 155, 216);
+}
+
+/* ===== INFORMATION STYLES ===== */
+
+.weather-elements {
+  display: flex;
+  flex-direction: column;
 }
 
 .weather-info {
-  background-image: linear-gradient(
-      rgba(64, 70, 255, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url("../img/nature.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 540px;
   width: 340px;
-  padding-top: 135px;
-  padding-left: 25px;
+  padding-top: 55px;
   border-radius: 15px;
 }
 
 .weather-info-location {
-  color: #ffffff;
+  color: #3f3f3f;
+  margin-bottom: 5px;
+}
+
+.day-of-week {
+  display: block;
   margin-bottom: 15px;
 }
 
+.weather-icon {
+  width: 114px;
+}
+
 .temperature {
-  color: #ffffff;
+  color: #3f3f3f;
+  font-weight: 700;
+  font-size: 44px;
+  margin-bottom: 34px;
+  margin-top: 7px;
+}
+
+.detailed-info {
+  display: flex;
+  padding-top: 19px;
+  justify-content: center;
+  gap: 25px;
+  background: #c4c3c3;
+  width: 340px;
+  padding-bottom: 33px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.detailed-info-item {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.weather-wind-icon {
+  width: 42px;
+}
+
+.weather-humidity-icon {
+  width: 48px;
+}
+
+.detailed-info-header {
+  font-weight: 500;
 }
 
 .description {
-  color: #ffffff;
+  color: #434455;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.wind {
+  color: #434455;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.rain {
+  color: #434455;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* RENDER WEATHER LIST */
+
+.few-day-list {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.weather-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.list-temperature {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.weather-list-icon {
+  width: 110px;
 }

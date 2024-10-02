@@ -9,23 +9,57 @@
   </head>
   <body>
     <div class="flex-box">
-      <h1 class="weather-header">Weather</h1>
-      <div class="input-container">
-        <input
-          class="search-input"
-          type="text"
-          placeholder="Enter your location"
-        />
-        <button class="search-btn" type="button">Search</button>
-      </div>
+      <div class="global">
+        <div class="search-input-div">
+          <h1 class="weather-header">WeatherApp</h1>
+          <div class="input-container">
+            <input
+              class="search-input"
+              type="text"
+              placeholder="Enter your location"
+            />
+            <button class="search-btn" type="button">
+              <img src="./src/img/search.png" class="mag-glass" />
+            </button>
+          </div>
+        </div>
 
-      <div class="weather-info is-hidden">
-        <h2 class="weather-info-location"></h2>
-        <h2 class="header-data"></h2>
-        <p class="temperature"></p>
-        <p class="description"></p>
+        <div class="weather-elements">
+          <div class="weather-info is-hidden">
+            <h2 class="weather-info-location"></h2>
+            <p class="day-of-week"></p>
+            <img class="weather-icon" src="" alt="weather icon" />
+            <p class="temperature"></p>
+            <div class="detailed-info">
+              <div class="detailed-info-item">
+                <img
+                  class="weather-wind-icon"
+                  src="./src/img/wind.png"
+                  alt="weather icon"
+                />
+                <div class="wind-info">
+                  <p class="wind"></p>
+                  <h4 class="detailed-info-header">Wind speed</h4>
+                </div>
+              </div>
+              <div class="detailed-info-item">
+                <img
+                  class="weather-humidity-icon"
+                  src="./src/img/weather1.png"
+                  alt="weather icon"
+                />
+                <div class="humidity-info">
+                  <p class="rain"></p>
+                  <h4 class="detailed-info-header">Humidity</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <ul class="few-day-list"></ul>
     </div>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
